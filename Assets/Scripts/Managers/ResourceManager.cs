@@ -1,19 +1,12 @@
 using System.Collections.Generic;
-using Resources;
 using UnityEngine;
 using UnityEngine.Events;
-
-public enum ResourceType
-{
-    GOLD
-}
-
 
 public class ResourceManager : MonoBehaviour
 {
     public UnityAction ONIncrease;
     
-    [SerializeField] private List<ResourceSO> _allRes = new List<ResourceSO>();
+    [SerializeField] private List<ResourceModel> _allRes = new List<ResourceModel>();
 
     public void IncreaseResource(ResourceType type, int count)
     {   
