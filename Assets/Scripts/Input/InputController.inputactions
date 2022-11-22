@@ -1,0 +1,34 @@
+{
+    "name": "InputController",
+    "maps": [
+        {
+            "name": "Move",
+            "id": "29a8c478-2e58-49f6-832b-715058d734e0",
+            "actions": [
+                {
+                    "name": "StickMoving",
+                    "type": "Value",
+                    "id": "d19a2505-c56e-48a5-af5e-ac076df18ee1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ed01498d-7436-4fef-a376-62bf89e9af4b",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StickMoving",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
