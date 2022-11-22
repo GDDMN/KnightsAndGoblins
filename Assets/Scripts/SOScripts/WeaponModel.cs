@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "Weapon", menuName = "ScriptableObjects/Weapon", order = 1)] 
 public class WeaponModel : ScriptableObject
 {
     [SerializeField] private WeaponType _type;
