@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 0
   _name: Arch
-  _actionRadius: 10
+  _actionRadius: 5
   _damage: 1
