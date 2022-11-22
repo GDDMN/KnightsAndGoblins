@@ -24,9 +24,18 @@ sealed class PlayerMovementSystem : IEcsRunSystem
     }
     
     private void DirectionRun(Vector2 joystickDirection, PlayerMoveComponent moveComponent)
-    { 
+    {
          Vector3 playerMoveDirection = new Vector3(joystickDirection.x, 0.0f, joystickDirection.y); 
          moveComponent.rigidbody.velocity = playerMoveDirection * moveComponent.speed  * Time.deltaTime;
+         Rotation(playerMoveDirection, moveComponent);
+    }
+
+    private void Rotation(Vector3 direction, PlayerMoveComponent moveComponent)
+    {
+        if (direction == Vector3.zero)
+            return;
+        
+        moveComponent.transform.rotation = Quaternion.LookRotation(direction);
     }
 
     public void Run()
